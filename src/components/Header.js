@@ -13,9 +13,9 @@ const Header = () => {
             <Link href="/dropdown" className="item">
                 Dropdown
             </Link>
-            <Link href="/translate" className="item">
+            {window.location.origin === "http://localhost:3000" && <Link href="/translate" className="item">
                 Translate
-            </Link>
+            </Link>}
         </div>
     );
 }
